@@ -1,0 +1,17 @@
+# Prompt the user for a word
+word = input("Enter a word: ")
+
+# Prompt the user for how many times they'd like the word repeated
+count = int(input("How many times would you like the word repeated? "))
+
+# Create a list with the repeated words
+word_list = [word] * count
+
+# Join the list with a space between each word and print it with custom separator
+result = " ".join(word_list)
+
+# Replace a part of the word (for example, change lowercase 'a' to uppercase 'A')
+result = result.replace("a", "A")
+
+# Print the result with the custom separator and end
+print(result, end="!\n")
